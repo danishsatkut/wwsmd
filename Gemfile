@@ -23,6 +23,7 @@ gem 'pg',                       '~> 0.17.0'
 gem 'jquery-rails'
 gem 'jbuilder',                 '~> 1.2'
 gem 'foundation-rails'
+gem 'slim-rails',               '~> 2.0.4'
 
 # authentication/authorization
 
