@@ -22,6 +22,7 @@ gem 'pg',                       '~> 0.17.0'
 
 gem 'jquery-rails'
 gem 'jbuilder',                 '~> 1.2'
+gem 'foundation-rails'
 
 # authentication/authorization
 
@@ -40,6 +41,7 @@ group :test, :development do
   gem 'rspec-rails',            '~> 2.14.0'
   gem 'database_cleaner',       '~> 1.1.1'
   gem 'factory_girl_rails',     '~> 4.2.1'
+  gem 'rails_layout'
 end
 
 #production/staging
