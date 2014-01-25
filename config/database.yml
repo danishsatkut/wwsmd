@@ -29,7 +29,5 @@ test:
 
 production:
   <<: *pg
-  username: dbuser
-  password: dbuser
   database: wwsmd_production
 
