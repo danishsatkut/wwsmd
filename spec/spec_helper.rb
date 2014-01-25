@@ -14,7 +14,10 @@ ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
 RSpec.configure do |config|
   # Factory girl
-  #config.include FactoryGirl::Syntax::Methods
+  config.include FactoryGirl::Syntax::Methods
+
+  # Capybara
+  config.include Capybara::DSL
 
   # Devise
   #config.include Devise::TestHelpers, type: :controller
