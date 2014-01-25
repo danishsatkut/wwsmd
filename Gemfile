@@ -30,7 +30,8 @@ gem 'devise'
 # other gems
 gem 'uglifier',                 '>= 1.3.0'
 gem 'turbolinks'
-gem 'quiet_assets'
+gem 'unicorn'
+
 
 #----------------------------------------------
 # environments
@@ -43,6 +44,14 @@ group :test, :development do
   gem 'database_cleaner',       '~> 1.1.1'
   gem 'factory_girl_rails',     '~> 4.2.1'
   gem 'rails_layout'
+  gem 'capybara'
+  gem 'quiet_assets'
+end
+
+# development
+
+group :development do
+  gem 'pry-rails'
 end
 
 #production/staging
