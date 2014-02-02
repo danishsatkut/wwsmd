@@ -19,7 +19,7 @@ class ConfirmationsController < Devise::ConfirmationsController
     end
 
     if !@confirmable.errors.empty?
-      render 'devise/confirmations/new'
+      render new_user_confirmation_path
     end
   end
 
@@ -33,7 +33,7 @@ class ConfirmationsController < Devise::ConfirmationsController
     end
     if !@confirmable.errors.empty?
       self.resource = @confirmable
-      render 'devise/confirmations/new'
+      render new_user_confirmation_path
     end
   end
 
@@ -60,5 +60,4 @@ class ConfirmationsController < Devise::ConfirmationsController
     set_flash_message :notice, :confirmed
     sign_in_and_redirect(resource_name, @confirmable)
   end
-
 end
